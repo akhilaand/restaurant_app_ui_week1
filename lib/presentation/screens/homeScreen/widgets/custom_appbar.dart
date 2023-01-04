@@ -69,7 +69,7 @@ class CustomAppbar extends StatelessWidget {
                           top: 2,
                           child: CircleAvatar(
                             radius:15,
-                            backgroundColor: Color(0xff302E3B),
+                            backgroundColor: primaryColor,
                             child: Text("2",style: TextStyle(color: white),),
                           ),
                         )

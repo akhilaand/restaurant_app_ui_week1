@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app_week1/presentation/screens/homeScreen/widgets/build_product_container.dart';
 import 'package:restaurant_app_week1/presentation/screens/homeScreen/widgets/custom_appbar.dart';
 import 'package:restaurant_app_week1/presentation/screens/homeScreen/widgets/custom_tab_bar.dart';
 import 'package:restaurant_app_week1/utils/color.dart';
@@ -12,22 +13,19 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size=MediaQuery.of(context).size;
-    return  Scaffold(
-      bottomNavigationBar: CustomBottomNavigationBar(size: size,),
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      bottomNavigationBar: CustomBottomNavigationBar(
+        size: size,
+      ),
       body: ListView(
-        children:   [
+        children: [
           const CustomAppbar(),
-          CustomTabBar()
-          
+          CustomTabBar(),
+          const BuildProductContainer()
         ],
       ),
     );
   }
 }
-
-
-
-
-
 
