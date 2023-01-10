@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_app_week1/presentation/screens/productDetail/widgets/build_order_summary_widget.dart';
+import 'package:restaurant_app_week1/presentation/screens/productDetail/widgets/build_payment_container_widget.dart';
 import 'package:restaurant_app_week1/presentation/screens/productDetail/widgets/build_product_detail_container_widget.dart';
 import 'package:restaurant_app_week1/utils/color.dart';
+import 'package:restaurant_app_week1/utils/constants.dart';
 class ProductDetailScreen extends StatelessWidget {
   const ProductDetailScreen({Key? key}) : super(key: key);
 
@@ -17,13 +20,18 @@ class ProductDetailScreen extends StatelessWidget {
                 height: 400,
                 width: size.width,
                 child: Image.asset("assets/images/cofee.jpg",fit: BoxFit.cover,)),
-            BuildProductDetailsContainerWidget(size: size)
+            BuildProductDetailsContainerWidget(size: size),
+            BuildOrderSummaryWidget(),
+            BuildPaymentContainerWidget()
           ],
         ),
       ),
     );
   }
 }
+
+
+
 
 
 

@@ -20,7 +20,7 @@ class BuildProductDetailsContainerWidget extends StatelessWidget {
 
         clipper: ProductDetailCustomClipper(),
         child: Container(
-          height: 350,
+          height: 370,
           width: size.width,
           color: primaryColor,
           child:const ProductDetailContent(),
