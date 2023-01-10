@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../utils/color.dart';
 import '../../../../utils/constants.dart';
+import '../../../../utils/styles.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({
@@ -40,10 +41,7 @@ class CustomAppbar extends StatelessWidget {
                   height:5,
                 ),
                 Text("Monday, November 25",
-                  style: TextStyle(
-                    color: grey,
-                    fontSize: 17,
-                  ),),
+                  style: secondryTextStyle,),
               ],
             );
   }
