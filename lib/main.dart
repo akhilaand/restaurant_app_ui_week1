@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: primaryColor,
         primarySwatch: Colors.blue,
       ),
-      home: const ProductDetailScreen(),
+      home: const HomeScreen(),
     );
   }
 }
