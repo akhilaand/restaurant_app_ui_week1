@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:restaurant_app_week1/presentation/screens/homeScreen/widgets/build_product_container.dart';
 import 'package:restaurant_app_week1/presentation/screens/homeScreen/widgets/custom_appbar.dart';
 import 'package:restaurant_app_week1/presentation/screens/homeScreen/widgets/custom_tab_bar.dart';
+import 'package:restaurant_app_week1/presentation/screens/productDetail/product_detail_screen.dart';
+import 'package:restaurant_app_week1/presentation/screens/productDetail/widgets/build_product_detail_content.dart';
 import 'package:restaurant_app_week1/utils/color.dart';
 import 'package:restaurant_app_week1/utils/constants.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
@@ -22,7 +24,14 @@ class HomeScreen extends StatelessWidget {
         children: [
           const CustomAppbar(),
           CustomTabBar(),
-          const BuildProductContainer()
+          InkWell(
+              onTap: (){
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProductDetailScreen()),
+                );
+              },
+              child: const BuildProductContainer())
         ],
       ),
     );

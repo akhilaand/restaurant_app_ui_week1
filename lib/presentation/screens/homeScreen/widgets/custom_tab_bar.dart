@@ -23,14 +23,17 @@ class _CustomTabBarState extends State<CustomTabBar> {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 50,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: isSelectedTabBar.length,
-        // shrinkWrap: false,
-        itemBuilder: (BuildContext context, int index)=>buildTabBarContainer(
-            categoryName: isSelectedTabBar[index].tabBarName,
-            isSelected: isSelectedTabBar[index].isSelected,
-        index: index
+      child: Padding(
+        padding: const EdgeInsets.only(left:appPadding),
+        child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemCount: isSelectedTabBar.length,
+          // shrinkWrap: false,
+          itemBuilder: (BuildContext context, int index)=>buildTabBarContainer(
+              categoryName: isSelectedTabBar[index].tabBarName,
+              isSelected: isSelectedTabBar[index].isSelected,
+          index: index
+          ),
         ),
       ),
     );

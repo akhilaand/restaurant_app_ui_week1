@@ -113,7 +113,9 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                 padding: const EdgeInsets.all(appPadding/6),
                 child: Center(child: IconButton(
                   padding: const EdgeInsets.only(left: 7),
-                  onPressed: (){},
+                  onPressed: (){
+                    Navigator.of(context).pop();
+                  },
                   icon: const Icon(Icons.arrow_back_ios,color: white),
                   )),
               ),

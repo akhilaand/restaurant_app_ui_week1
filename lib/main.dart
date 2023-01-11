@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:restaurant_app_week1/presentation/screens/homeScreen/home_screen.dart';
 import 'package:restaurant_app_week1/presentation/screens/productDetail/product_detail_screen.dart';
 import 'package:restaurant_app_week1/utils/color.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge, overlays: [
+    SystemUiOverlay.bottom
+  ]);
   runApp(const MyApp());
 }
 

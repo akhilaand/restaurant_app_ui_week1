@@ -10,7 +10,7 @@ class ProductDetailContent extends StatelessWidget {
   Widget build(BuildContext context) {
       Size size=MediaQuery.of(context).size;
     return  Padding(
-      padding: const EdgeInsets.symmetric(vertical: appPadding,horizontal: appPadding+5),
+      padding: const EdgeInsets.symmetric(vertical: appPadding*2,horizontal: appPadding+5),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children:  [
@@ -27,7 +27,7 @@ class ProductDetailContent extends StatelessWidget {
             style: secondryTextStyle.copyWith(fontSize: 16,fontWeight: FontWeight.w700),
           ),
           const SizedBox(
-            height: 15,
+            height: 20,
           ),
           SizedBox(
             width: size.width/1.5,
@@ -41,7 +41,7 @@ class ProductDetailContent extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 25,
+            height: 30,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
